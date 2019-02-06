@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Art_of_Defence</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="app.js" defer></script>       
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#main_info">Main</a>
+            <a href="#guid">Guid</a>
+            <a href="#screenshots">ScreenShots</a>
+            <a href="#play_game">Play</a>
+        </nav>
+    </header>
+    <section id="main_info">
+        <div class="logo"> 
+            <img src="img/logo.png">
+            <h1>ART OF DEFENCE</h1> 
+        </div>
+         <a href="#play_game">LETS GO!</a>
+         <span>created by Evgeny Vashkov</span>
+    </section>
+    <section id="guid">
+            <h2>Guid</h2>
+        <div class="move center">
+            <div class="button center">W -   UP</div>
+            <div class="button center">A - LEFT</div>
+            <div class="button center">S - DOWN</div>
+            <div class="button center">D - RIGHT</div>
+            <img src="/img/walk.png" class="controll">
+        </div>
+        <div class="move center">
+                <div class="button center space">SPACE - ATTACK</div>
+                <img src="/img/attack.png" class="controll">
+        </div>
+        <div class="move center">
+                <div class="button center mode">R - change move mode (run/walk)</div>
+                <img src="/img/run.png" class="controll">
+        </div>
+    </section>
+    <section id="screenshots">
+        <h2>ScreenShots</h2>
+        <div class="screens center">
+            <div class="screen1"></div>
+            <div class="screen2"></div>
+            <div class="screen3"></div>
+            <div class="screen4"></div>
+        </div>
+    </section>
+    <section id="play_game">
+            <h2>The game:</h2>
+        <div class="center">
+            <canvas id="canvas" width="896" height="650"></canvas>
+        </div>
+        <div id="start_game" class="start-game center ">START GAME</div>
+        <div id="restart_game" class="restart-game center">RESTART</div>
+    </section>
+
+    <audio src="audio/title.mp3" id = "title_audio" autoplay></audio>
+    <audio src="audio/step_lth4.ogg" id = "step"></audio>
+    <audio src="audio/step_metal.ogg" id = "step_hero"></audio>
+    <audio src="audio/goblin-2.wav" id = "goblin"></audio>
+    <audio src="audio/hit.mp3" id = "attack_sound"></audio>
+    <audio src="audio/sword.wav" id = "sword"></audio>
+    
+
+
+</body>
+</html>
